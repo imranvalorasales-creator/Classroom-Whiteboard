@@ -1,0 +1,5 @@
+{
+  "name": "Virtual Coaching Whiteboard",
+  "description": "A real-time collaborative whiteboard app for online coaching centers with stylus support, chat, and multi-page functionality.",
+  "requestFramePermissions": []
+}
