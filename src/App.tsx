@@ -44,7 +44,8 @@ export default function App() {
   useEffect(() => {
     if (!joined) return;
 
-    const newSocket = io(window.location.origin);
+    const serverUrl = import.meta.env.VITE_SERVER_URL || window.location.origin;
+    const newSocket = io(serverUrl);
     setSocket(newSocket);
 
     newSocket.emit('join-room', roomId, role);
